@@ -83,7 +83,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: auto auto auto auto auto;  /*"Take up just enough space- could use repeat*/
-  grid-row-gap: 15 px;
+  grid-row-gap: 15px;
 }
 
 header{
@@ -117,7 +117,7 @@ header p{
 .about-image, .method-image, .clients-image, .contact-image{
   /*Your Code Here*/
   grid-column: 1 / span 3; /*can use 1 / span -1 too */
-  max-height: 700 px;
+  max-height: 700px;
   overflow: hidden; /*Don't use on text */
 }
 
@@ -168,12 +168,12 @@ align-self: center;
   .about, .clients, .method-image, .contact-image{
     /*Your code here:*/
     grid-column: 3 / span 2;
-    max-height: 700px;
+    
   }
   .about-image, .clients-image, .method, .contact{
     /*Your code here:*/
     grid-column: 2 / span 2;
-    max-height: 700px;
+    
   }
 }
 
