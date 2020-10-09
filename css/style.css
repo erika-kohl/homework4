@@ -81,9 +81,9 @@ footer{
 .container{
   /*Your Code Here - should see dotted lines*/
   display: grid;
-  grid-row-gap: 15 px;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: auto auto auto auto auto;  /*"Take up just enough space- could use repeat*/
+  grid-row-gap: 15 px;
 }
 
 header{
@@ -123,24 +123,24 @@ header p{
 
 .about, .about-image{
   /*Your Code Here*/
-  grid-row: 2 / span 1; /* or use span 1 */
+  grid-row: 2 / auto; /* or use span 1 */
 }
 
 .method, .method-image{
   /*Your Code Here*/
-  grid-row: 3 / span 1;
+  grid-row: 3 / auto;
 }
 
 
 .clients, .clients-image{
   /*Your Code Here*/
-  grid-row: 4 / span 1;
+  grid-row: 4 / auto;
 }
 
 
 .contact, .contact-image{
   /*Your Code Here*/
-  grid-row: 5 / span 1;
+  grid-row: 5 / auto;
 }
 
 .text-block{
@@ -168,10 +168,12 @@ align-self: center;
   .about, .clients, .method-image, .contact-image{
     /*Your code here:*/
     grid-column: 3 / span 2;
+    max-height: 700px;
   }
   .about-image, .clients-image, .method, .contact{
     /*Your code here:*/
     grid-column: 2 / span 2;
+    max-height: 700px;
   }
 }
 
